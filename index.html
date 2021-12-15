@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&family=Quicksand&display=swap" rel="stylesheet">
+    <script src="script.js" async></script>
     <title>Jack Logan - Portfolio</title>
 </head>
 
@@ -34,9 +35,10 @@
             <h2 id="hello">Hello! I'm</h2>
             <div id="jack">Jack Logan</div> 
             <img id="splash-img" src="resources/profile-pic.jpeg">
-            <div id="splash-circle"></div>
+            <div id="splash-circle1"></div>
+            <div id="splash-circle2"></div>
             <!-- <div id="logan">Logan,</div>    -->
-            <h1 id="webdev">web developer.</h1>
+            <h1 id="webdev" class="underline-word">web developer.</h1>
             <!-- Make below p instead of h2? Include more or less detail? -->
             <!-- Create this as a grid and place the different elements/items in nicely spaced locations-->
             <h3 id="about-info1">I'm excited to be moving from a career in the digital music business to the world of tech. I look forward to collaborating with clients soon!</h3>
@@ -50,40 +52,33 @@
 
             <!-- Add script to hide p "click me" text and reveal p "body" text -->
             <!-- Add <a> links to github? At a later date -->
-            <div id="life-music" class="project-preview">
+           
+                <div id="life-music" class="project-preview">
                 <h3 class="project-title">LIFE Music</h3>
-                <div class="overlay">
-                <img src="resources/life-music.jpg">
-                </div>
-                <h3 class="project-click" id="life-click">Click to learn more!</h3>
-                <h3 class="project-reveal" id="life-reveal">A responsive landing page for a fictional music business.</h3>
+                    <img src="resources/life-music.jpg">
+                    <a><h3 class="project-click" id="life-click">Click to learn more!</h3></a>
+                    <!-- <a><h3 class="project-reveal" id="life-hide">A responsive landing page for a fictional music business.</h3> -->
             </div>
 
             <div id="trail-runners" class="project-preview">
                 <h3 class="project-title">Sierra Nevada Trail Runners</h3>
-                <div class="overlay">
                 <img src="resources/sierra-nevada.jpg">
-                </div>
-                <h3 class="project-click" id="trail-runners-click">Click to learn more!</h3>
-                <h3 class="project-reveal" id="trail-reveal">A homepage for a fictional running club.</h3>
+                <a><h3 class="project-click" id="trail-runners-click">Click to learn more!</h3></a>
+                <a><h3 class="project-reveal" id="trail-hide">A homepage for a fictional running club.</h3></a>
             </div>
 
             <div id="piano-project" class="project-preview">
                 <h3 class="project-title">Happy Birthday - Interactive Piano</h3>
-                <div class="overlay">
                 <img src="resources/piano.jpg">
-                </div>
-                <h3 class="project-click" id="piano-click">Click to learn more!</h3>
-                <h3 class="project-reveal" id="piano-reveal">A playable piano programmed with JavaScript (HTML and CSS source code courtesy of Codecademy).</h3>
+                <a><h3 class="project-click" id="piano-click">Click to learn more!</h3></a>
+                <a><h3 class="project-reveal" id="piano-hide">A playable piano programmed with JavaScript (HTML and CSS source code courtesy of Codecademy).</h3></a>
             </div>
 
             <div id="angles" class="project-preview">
                 <h3 class="project-title">Angles - Architecture Blog</h3>
-                <div class="overlay">
                 <img src="resources/angles.jpg">
-                </div>
-                <h3 class="project-click" id="angles-click">Click to learn more!</h3>
-                <h3 class="project-reveal" id="angles-reveal">An avant-garde CSS grid layout (source code courtesy of Codecademy).</h3>
+                <a><h3 class="project-click" id="angles-click">Click to learn more!</h3></a>
+                <a><h3 class="project-reveal" id="angles-hide">An avant-garde CSS grid layout (source code courtesy of Codecademy).</h3></a>
             </div>
         </section>
 
@@ -112,9 +107,9 @@
             </div>
 
             <div id="contact-icons">
-                <img src="resources/email.png" class="contact-icons">
-                <img src="resources/linkedin.png" class="contact-icons">
-                <img src="resources/github.png" class="contact-icons">
+                <a href="mailto:jackmlogan@gmail.com? subject=Hello!" target="_blank" rel="noopener noreferrer"><img src="resources/email.png" class="contact-icons"></a>
+                <a href="https://www.linkedin.com/in/jack-logan-817287123/" target="_blank" rel="noopener noreferrer"><img src="resources/linkedin.png" class="contact-icons"></a>
+                <a href="https://github.com/jack-m-logan" target="_blank" rel="noopener noreferrer"><img src="resources/github.png" class="contact-icons"></a>
             </div>
         </section>
      </body>
@@ -122,8 +117,9 @@
 <!-- Footer - make <p> instead of h3? -->
 <footer>
     <div class="subhead-bar">
-        <h3>&copy; Jack Logan 2021</h3>
+        <p>&copy; Jack Logan 2021</p>
     </div>
 </footer>
+
 
 </html>
