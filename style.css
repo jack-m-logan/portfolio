@@ -1,0 +1,296 @@
+/* Browser default override */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+   // border: 1px solid red;
+  }
+
+/* Universal Styles*/
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+p, ul li {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+}
+
+/* Sub heading bar */
+
+.subhead-bar {
+    height: 100px;
+    width: 100%;
+    background-color: #003049;
+    color: whitesmoke;
+    display: flex;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    z-index: 10;
+}
+
+/* Nav bar */
+
+nav {
+    position: fixed;
+    top: 0;
+    opacity: 0.99;
+}
+
+#profile-pic {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+li a {
+   color: whitesmoke; 
+   text-decoration: none;
+}  
+
+/* Add text animation/transform to include interactive underline when hovering/focussing */
+li a:hover, li a:focus {
+    color: #F77F00;
+}
+
+/* Main content wrapper */
+
+#wrapper {
+    margin-top: 100px;
+    width: 100%;
+    background-color: rgba(234, 226, 183, 0.4);
+
+}
+
+/* About section - grid */
+
+#about {
+    background-color: rgba(234, 226, 183, 0.4);
+    display: grid;
+    width: 100%;
+    height: 600px;
+    /* margin: auto; */
+    grid-gap: 5px;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    
+}
+
+#splash-img {
+    width: 50vh;
+    height: auto;
+    -webkit-transform: scaleX(-1);
+    border-radius: 50%;
+    opacity: 0.7;
+    grid-area: 2 / 10 / 4 / 12;
+    z-index: 0;
+}
+
+ /* #splash-circle {
+    background-color: #F77F00;
+    width: 35vh;
+    height: auto;
+    border-radius: 50%;
+    grid-area: 2 / 7 / span 4 / span 2;
+    z-index: -1;
+}  */
+
+#hello {
+    grid-area: 2 / 2 / 3 / 3;
+    white-space: nowrap;
+}
+
+#jack {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 8rem;
+    font-weight: 800;
+    white-space: nowrap;
+    grid-area: 3 / 3 / span 2 / span 6;
+    z-index: 2;
+}
+
+#logan {
+    font-family: 'Outfit', sans-serif;
+    padding: 0;
+    font-size: 8rem;
+    font-weight: 800;
+    grid-area: 4 / 6 / span 2 / 10;
+}
+
+#webdev {
+    grid-area: 7 / 6 / span 1 / span 3;
+    white-space: nowrap;
+    /* grid-area: 7 / 8 / span 5 / span 1; */
+}
+
+ /* Potential answer to text underline - add class="underline-word" and try other solutions too
+.underline-word:after {
+    content: '';
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    background: #28D18A;
+    z-index: -1;
+} */
+
+#about-info1 {
+    grid-area: 9 / 3 / span 2 / span 5;
+    width: 45rem;
+}
+
+/* Projects section */
+#projects {
+    width: 100%;
+}
+
+.subhead-bar h2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.project-preview {
+    max-width: 40%;
+    min-width: 400px;
+    /* min-height: 500px; Add min-height once styled */
+    margin: auto;
+    border: 3px #003049 solid;
+    border-radius: 1%;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-preview:last-child {
+    margin-bottom: 15vh;
+}
+
+.project-preview img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    z-index: -2;
+}
+
+.overlay {
+    background-color: #003049;
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    margin: none;
+    /* position: relative;    */
+    z-index: 9;
+}
+
+.project-title, .project-click {
+    background-color: #003049;
+    color: whitesmoke;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* To reveal/show with JS when ready */
+.project-reveal {
+    display: none;    
+}
+
+/* Skills section*/
+
+#skills {
+    width: 100%;
+}
+
+#skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-items: center;
+    justify-items: center;
+    max-width: 80%;
+    min-width: 60%;
+    height: 50vh;
+    margin: auto;
+}
+
+.tech-icon {
+    width: 150px;
+    height: auto;
+    padding: 2vh;
+}
+
+/* Contact section */
+
+#contact {
+    width: 100%;
+}
+
+#contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-items: center;
+    justify-items: center;
+    max-width: 80%;
+    min-width: 60%;
+    padding: 50px;
+    height: auto;
+    margin: auto;
+}
+
+/* Add breakpoint to stack these vertically */
+.contact-icons {
+    width: 250px;
+    height: auto;
+    padding: 2vh;
+}
+
+/* Footer section */
+
+.subhead-bar h3 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}

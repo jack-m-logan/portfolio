@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <!-- Add favicon -->
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;800&family=Quicksand&display=swap" rel="stylesheet">
+    <title>Jack Logan - Portfolio</title>
+</head>
+
+<body>
+    <!-- Header, nav bar -->
+    <header>
+        <nav class="subhead-bar">
+            <a href="#"><img src="resources/profile-pic.jpeg" id="profile-pic"></a>
+           <!-- Add some animation/text transform to links, a:hover etc once completed -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <!-- About section -->
+        <section id="about">
+            <h2 id="hello">Hello! I'm</h2>
+            <div id="jack">Jack Logan</div> 
+            <img id="splash-img" src="resources/profile-pic.jpeg">
+            <div id="splash-circle"></div>
+            <!-- <div id="logan">Logan,</div>    -->
+            <h1 id="webdev">web developer.</h1>
+            <!-- Make below p instead of h2? Include more or less detail? -->
+            <!-- Create this as a grid and place the different elements/items in nicely spaced locations-->
+            <h3 id="about-info1">I'm excited to be moving from a career in the digital music business to the world of tech. I look forward to collaborating with clients soon!</h3>
+        </section>
+
+        <!-- Projects-->
+        <section id="projects">
+            <div class="subhead-bar">
+                <h2>Projects</h3>
+            </div>
+
+            <!-- Add script to hide p "click me" text and reveal p "body" text -->
+            <!-- Add <a> links to github? At a later date -->
+            <div id="life-music" class="project-preview">
+                <h3 class="project-title">LIFE Music</h3>
+                <div class="overlay">
+                <img src="resources/life-music.jpg">
+                </div>
+                <h3 class="project-click" id="life-click">Click to learn more!</h3>
+                <h3 class="project-reveal" id="life-reveal">A responsive landing page for a fictional music business.</h3>
+            </div>
+
+            <div id="trail-runners" class="project-preview">
+                <h3 class="project-title">Sierra Nevada Trail Runners</h3>
+                <div class="overlay">
+                <img src="resources/sierra-nevada.jpg">
+                </div>
+                <h3 class="project-click" id="trail-runners-click">Click to learn more!</h3>
+                <h3 class="project-reveal" id="trail-reveal">A homepage for a fictional running club.</h3>
+            </div>
+
+            <div id="piano-project" class="project-preview">
+                <h3 class="project-title">Happy Birthday - Interactive Piano</h3>
+                <div class="overlay">
+                <img src="resources/piano.jpg">
+                </div>
+                <h3 class="project-click" id="piano-click">Click to learn more!</h3>
+                <h3 class="project-reveal" id="piano-reveal">A playable piano programmed with JavaScript (HTML and CSS source code courtesy of Codecademy).</h3>
+            </div>
+
+            <div id="angles" class="project-preview">
+                <h3 class="project-title">Angles - Architecture Blog</h3>
+                <div class="overlay">
+                <img src="resources/angles.jpg">
+                </div>
+                <h3 class="project-click" id="angles-click">Click to learn more!</h3>
+                <h3 class="project-reveal" id="angles-reveal">An avant-garde CSS grid layout (source code courtesy of Codecademy).</h3>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills">
+            <div class="subhead-bar">
+                <h2>Skills</h3>
+            </div>
+
+            <!-- Flex box icons (add imgs)-->
+            <div id="skills-icons">
+                <img src="resources/HTML5.png" class="tech-icon">
+                <img src="resources/CSS3.png" class="tech-icon">
+                <img src="resources/Javascript.png" class="tech-icon">
+                <img src="resources/python.png" class="tech-icon">
+                <img src="resources/git.png" class="tech-icon">
+                <img src="resources/github.png" class="tech-icon">
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <!-- Add a contact form too -->
+        <section id="contact">
+            <div class="subhead-bar">
+                <h2>Contact</h3>
+            </div>
+
+            <div id="contact-icons">
+                <img src="resources/email.png" class="contact-icons">
+                <img src="resources/linkedin.png" class="contact-icons">
+                <img src="resources/github.png" class="contact-icons">
+            </div>
+        </section>
+     </body>
+    </div>
+<!-- Footer - make <p> instead of h3? -->
+<footer>
+    <div class="subhead-bar">
+        <h3>&copy; Jack Logan 2021</h3>
+    </div>
+</footer>
+
+</html>
