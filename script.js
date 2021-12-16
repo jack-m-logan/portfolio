@@ -1,14 +1,20 @@
-// LIFE Music reveal text
-let lifeChange = document.getElementById('life-click');
-
-function textReturn() {
-    lifeChange.innerHTML = "Click to learn more!";
+const defaultText = "Click to learn more!";
+const showText = {
+    "life-click": "A responsive landing page for a fictional music business. (Built with HTML5 & CSS3)",
+    "trail-runners-click": "A homepage for a fictional running club. (Built with HTML5 & CSS3)",
+    "piano-click": "A playable piano programmed with JavaScript. (HTML and CSS source code courtesy of Codecademy)",
+    "angles-click": "A magazine layout using CSS grid. (HTML source code courtesy of Codecademy)"
 }
 
-function changeText() {
-    lifeChange.innerHTML = "A responsive landing page for a fictional music business.";
-}
+Object.keys(showText).forEach( s => {
+    document.getElementById(s).addEventListener('click', toggleText);
+});
 
-lifeChange.addEventListener('click', textReturn);
-lifeChange.addEventListener('click', changeText);
+Object.keys(defaultText).forEach( h => {
+    document.getElementById(h).addEventListener('click', toggleText);
+});
 
+function toggleText(event) {
+    let element = event.target;
+    element.innerHTML = element.innerHTML == defaultText ? showText[element.id] : defaultText;
+};
