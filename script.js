@@ -10,10 +10,6 @@ Object.keys(showText).forEach( s => {
     document.getElementById(s).addEventListener('click', toggleText);
 });
 
-Object.keys(defaultText).forEach( h => {
-    document.getElementById(h).addEventListener('click', toggleText);
-});
-
 function toggleText(event) {
     let element = event.target;
     element.innerHTML = element.innerHTML == defaultText ? showText[element.id] : defaultText;
