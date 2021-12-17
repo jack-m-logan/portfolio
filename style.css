@@ -82,6 +82,7 @@ ul li {
 li a {
    color: whitesmoke; 
    text-decoration: none;
+   font-size: 1.1em;
 }  
 
 /* Add text animation/transform to include interactive underline when hovering/focussing */
@@ -100,7 +101,6 @@ li a:hover, li a:focus {
 /* About section - grid */
 
 #about {
-    background-color: rgba(234, 226, 183, 0.4);
     display: grid;
     width: 100%;
     height: 600px;
@@ -108,6 +108,16 @@ li a:hover, li a:focus {
     grid-template: repeat(12, 1fr) / repeat(12, 1fr);
     
 }
+
+/* Media query for about section grid - to work on */
+/* 
+@media only screen and (max-width: 1000px) {
+    #about {
+        display: grid;
+        grid-gap: 5px;
+        grid-template: repeat(9, 1fr) / repeat(9, 1fr);
+    }
+} */
 
 #splash-img {
     width: 50vh;
@@ -132,13 +142,12 @@ li a:hover, li a:focus {
 
 #splash-circle2 {
     background-color: #F77F00;
-    width: 40vh;
+    max-width: 40vh;
     height: auto;
     border-radius: 50%;
     grid-area: 2 / 9 / span 8 / span 4;
     z-index: -1;
     opacity: 0.8;
-    
 }  
 
 #hello {
@@ -169,6 +178,7 @@ li a:hover, li a:focus {
     grid-area: 7 / 6 / span 1 / span 3;
     white-space: nowrap;
 }
+
 /* 
  Potential answer to text underline - add class="underline-word" and try other solutions too
 .underline-word:after {
